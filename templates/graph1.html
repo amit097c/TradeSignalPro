@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Graph</title>
+</head>
+<body>
+    <h1>Stock Graph</h1>
+    {% if graph %}
+        <div>
+            {{ graph|safe }}
+        </div>
+    {% else %}
+        <p>{{ message }}</p>
+    {% endif %}
+</body>
+</html>

@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+</head>
+<body>
+    <h1>Stock Trading Application</h1>
+    <a href="{% url 'tradesignal:fetch_data'%}">Fetch Data</a><br>
+    
+    <a href="{% url 'tradesignal:apply_strategy' symbol='AAPL' %}">Apply Strategy to AAPL</a><br>
+    <a href="{% url 'tradesignal:plot_graph' symbol='AAPL' %}">View AAPL Chart</a>
+    <a href="{% url 'tradesignal:live_trade'%}">Live Trade</a>
+</body>
+</html>
